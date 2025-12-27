@@ -22,6 +22,13 @@
     )
 )
 
+(define-public (update-biometric (new-hash (buff 32)))
+    (let ((existing (map-get? biometric-data tx-sender)))
+        (asserts! (is-some existing) err-not-found)
+        (ok (map-set biometric-data tx-sender new-hash))
+    )
+)
+
 (define-read-only (get-biometric (user principal))
     (map-get? biometric-data user)
 )
