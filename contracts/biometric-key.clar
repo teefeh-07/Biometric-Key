@@ -17,3 +17,7 @@
         (ok (map-set biometric-data tx-sender hash))
     )
 )
+
+(define-read-only (get-biometric (user principal))
+    (map-get? biometric-data user)
+)
