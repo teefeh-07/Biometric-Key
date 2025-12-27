@@ -1,0 +1,4 @@
+[network]
+name = "devnet"
+[devnet]
+epoch = "3.3"
