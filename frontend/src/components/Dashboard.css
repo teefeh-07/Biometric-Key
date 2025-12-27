@@ -12,6 +12,15 @@
   margin-top: 2rem;
 }
 
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 .stat-card .active {
   color: #4ade80;
   font-weight: bold;
