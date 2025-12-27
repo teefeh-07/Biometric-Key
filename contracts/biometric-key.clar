@@ -9,3 +9,11 @@
 
 ;; Data Maps
 (define-map biometric-data principal (buff 32))
+
+;; Public Functions
+(define-public (register-biometric (hash (buff 32)))
+    (let ((existing (map-get? biometric-data tx-sender)))
+        (asserts! (is-none existing) err-already-registered)
+        (ok (map-set biometric-data tx-sender hash))
+    )
+)
