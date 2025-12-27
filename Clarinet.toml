@@ -1,0 +1,12 @@
+[project]
+name = "Biometric-Key"
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+requirements = []
+[contracts]
+[repl]
+costs_version = 2
+parser_version = 2
+[repl.analysis]
+passes = ["check_checker"]
