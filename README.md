@@ -8,3 +8,9 @@ A secure biometric authentication system on Stacks blockchain.
 - React
 - Node.js
 - @stacks/connect
+
+## Features
+- user registration
+- data management (update/delete)
+- biometric hashing
+- user counting
