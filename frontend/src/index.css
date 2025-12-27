@@ -3,3 +3,12 @@
   --bg: #1a1a1a;
   --text: rgba(255, 255, 255, 0.87);
 }
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
