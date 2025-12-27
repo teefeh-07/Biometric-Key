@@ -28,3 +28,10 @@ button:hover {
   border-color: #646cff;
   background-color: #535bf2;
 }
+.card {
+  padding: 2em;
+  background: #242424;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
