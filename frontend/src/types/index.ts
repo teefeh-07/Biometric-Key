@@ -5,3 +5,10 @@ export interface User {
   biometricHash?: string;
   lastSeen: number;
 }
+
+export enum AuthStatus {
+  Loading,
+  SignedIn,
+  SignedOut,
+  Error
+}
