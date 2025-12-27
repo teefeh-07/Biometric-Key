@@ -44,3 +44,7 @@
 (define-read-only (get-total-users)
     (ok (var-get user-count))
 )
+
+(define-read-only (is-registered (user principal))
+    (is-some (map-get? biometric-data user))
+)
