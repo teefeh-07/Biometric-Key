@@ -10,6 +10,9 @@
 ;; Data Maps
 (define-map biometric-data principal (buff 32))
 
+;; Data Vars
+(define-data-var user-count uint u0)
+
 ;; Public Functions
 (define-public (register-biometric (hash (buff 32)))
     (let ((existing (map-get? biometric-data tx-sender)))
