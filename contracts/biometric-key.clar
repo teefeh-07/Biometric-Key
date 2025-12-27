@@ -29,6 +29,14 @@
     )
 )
 
+(define-public (delete-biometric)
+    (let ((existing (map-get? biometric-data tx-sender)))
+        (asserts! (is-some existing) err-not-found)
+        (var-set user-count (- (var-get user-count) u1))
+        (ok (map-delete biometric-data tx-sender))
+    )
+)
+
 (define-read-only (get-biometric (user principal))
     (map-get? biometric-data user)
 )
