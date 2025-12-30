@@ -2,3 +2,7 @@ node_modules/
 .clarinet/
 build/
 automation/
+**/settings/**
+.env    
+**/scripts/**   
+**/deployments/**
